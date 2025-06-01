@@ -20,7 +20,7 @@ This example implements a customer service system for an online course platform,
 ## Project Structure
 
 ```
-7-stateful-multi-agent/
+customer-service-chatbot/
 │
 ├── customer_service_agent/         # Main agent package
 │   ├── __init__.py                 # Required for ADK discovery
@@ -49,7 +49,7 @@ session_service = InMemorySessionService()
 def initialize_state():
     """Initialize the session state with default values."""
     return {
-        "user_name": "chiru",
+        "user_name": "",
         "purchased_courses": [""],
         "interaction_history": [],
     }
